@@ -1,7 +1,13 @@
-/**
+/*
  * 14 <- Hacer un programa que imprima el mayor y 
  *       el menor de una serie de cinco números que
-         vamos introduciendo por teclado.
+ *       vamos introduciendo por teclado.
+*/
+
+/**
+ * 
+ * @param {number[]} numbers an array of numbers
+ * @returns {number} the maximum number in the array
  */
 function getMax (numbers){
     let max = numbers[0];
@@ -10,6 +16,11 @@ function getMax (numbers){
     }
     return max;
 }
+/**
+ * 
+ * @param {number[]} numbers an array of numbers 
+ * @returns {number} the minimum number in the array
+ */
 function getMin (numbers){
     let min = numbers[0];
     for (let i = 1; i < numbers.length; i++){
@@ -30,7 +41,7 @@ let numbers = new Array(5);
 rl.prompt();
 
 rl.on('line',(line)=>{
-    numbers[lineCount] = parseFloat(line);
+    numbers[lineCount] = Number.parseFloat(line);
     lineCount++;
     if (lineCount == 5) {
         rl.close();
@@ -39,4 +50,3 @@ rl.on('line',(line)=>{
         console.log('Maximum for given numbers: ' + getMax(numbers));
     }  
 })
-
