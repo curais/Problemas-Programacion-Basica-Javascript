@@ -1,5 +1,5 @@
 /*
-25. Introducir un numero menor de 5000 y pasarlo a romado
+25. Introducir un numero menor de 5000 y pasarlo a romano
 */
 function romanize(n) {
 	let	values = [1, 5, 10, 50, 100, 500];
