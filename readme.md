@@ -1,6 +1,13 @@
 # Problemas de programación basica
+
 Problemas de programación realizados en Javascript
 
+## Materia y autor
+Materia: Plataformas Web <br>
+Alumno: Cristhoper Ochoa Gutierrez <br>
+Matricula: 310853 
+
+## Descripcion de los problemas
 1. Hacer un programa que imprima los números del 1 al 100.
 
 2. Hacer un programa que imprima los números del 100 al 0, en orden decreciente.
